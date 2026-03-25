@@ -69,18 +69,6 @@ export default function LoginPage() {
           </div>
         </div>
 
-        {/* Hint */}
-        <div style={{ marginTop: 20, background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', padding: '14px 16px' }}>
-          <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, color: 'var(--text3)', letterSpacing: 1, marginBottom: 8 }}>DEFAULT CREDENTIALS</div>
-          {[['admin','admin123','SYSTEM_ADMIN'],['manager','manager123','WAREHOUSE_MANAGER'],['client1','client123','CLIENT']].map(([u,p,r]) => (
-            <div key={u} style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11, fontFamily: 'var(--font-mono)', color: 'var(--text2)', padding: '2px 0', cursor: 'pointer' }}
-              onClick={() => setForm({ username: u, password: p })}>
-              <span style={{ color: 'var(--text)' }}>{u}</span>
-              <span>{p}</span>
-              <span style={{ color: 'var(--text3)' }}>{r}</span>
-            </div>
-          ))}
-        </div>
       </div>
     </div>
   )
